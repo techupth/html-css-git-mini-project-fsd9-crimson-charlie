@@ -19,98 +19,178 @@
         font-family: Rubik;
         box-sizing: border-box;
         font-weight: 400;
+        text-align: left;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-weight: 500;
       }
     </style>
   </head>
   <body>
     <!-- Start Coding here -->
-    <header class="relative w-full">
-      <img src="./assets/header-bg.png" class="absolute z-0 w-full" />
-      <div
-        class="absolute z-10 flex flex-col w-full pt-[32px] gap-[83px] pl-[166px] pr-[63px] max-sm:gap-[0px] max-sm:pt-0 max-sm:pl-[16px] max-sm:pr-0"
-      >
-        <!-- Navigator bar -->
+    <header class="h-screen overflow-x-hidden">
+      <div class="relative h-full">
+        <img src="./assets/header-bg.png" class="absolute z-0 w-full h-5/6" />
         <div
-          class="flex flex-row justify-between h-[69px] items-center w-full pr-[100px] max-sm:pr-[16px]"
+          class="absolute z-10 flex flex-col w-full pt-[32px] gap-[83px] pl-[166px] pr-[63px] max-sm:gap-[0px] max-sm:pt-0 max-sm:pl-[16px] max-sm:pr-0"
         >
+          <!-- Navigator bar -->
           <div
-            class="flex flex-row justify-between items-center gap-[18px] max-sm:gap-[8px]"
+            class="flex flex-row justify-between h-[69px] items-center w-full pr-[100px] max-sm:pr-[16px]"
           >
-            <img
-              src="./assets/header-logo.png"
-              class="h-[42.5px] w-[51px] max-sm:w-[38.25px] max-sm:h-[31.875px]"
-            />
-            <h1 class="text-[36px] max-sm:text-[27px] font-medium">Agencio</h1>
-          </div>
-          <div class="flex flex-row gap-[48px] font-[16px] max-sm:hidden">
-            <button>Home</button>
-            <button>Category</button>
-            <button>Service</button>
-            <button>Blog</button>
-            <button>Contact</button>
-            <button
-              class="w-[160px] h-[60px] bg-[#FDD76E] text-center px-[22px] py-[20.5px] rounded-[5px]"
+            <div
+              class="flex flex-row justify-between items-center gap-[18px] max-sm:gap-[8px]"
             >
-              Create Account
+              <img
+                src="./assets/header-logo.png"
+                class="h-[42.5px] w-[51px] max-sm:w-[38.25px] max-sm:h-[31.875px]"
+              />
+              <h1 class="text-[36px] max-sm:text-[27px] font-medium">
+                Agencio
+              </h1>
+            </div>
+            <div class="flex flex-row gap-[48px] font-[16px] max-sm:hidden">
+              <button>Home</button>
+              <button>Category</button>
+              <button>Service</button>
+              <button>Blog</button>
+              <button>Contact</button>
+              <button
+                class="w-[160px] h-[60px] bg-[#FDD76E] text-center px-[22px] py-[20.5px] rounded-[5px]"
+              >
+                Create Account
+              </button>
+            </div>
+            <button>
+              <img
+                src="./assets/header-menu-button.png"
+                class="hidden max-sm:block w-[24px] h-[24px]"
+              />
             </button>
           </div>
-          <button>
-            <img
-              src="./assets/header-menu-button.png"
-              class="hidden max-sm:block w-[24px] h-[24px]"
-            />
-          </button>
-        </div>
 
-        <!-- header content -->
-        <div
-          class="flex flex-row max-sm:flex-col justify-between pr-[0px] max-sm:gap-[66px]"
-        >
-          <!-- context -->
-          <div class="flex flex-col gap-[14px] pt-[70px] max-sm:pt-[47px]">
-            <p class="text-[#1374F6] text-[20px] max-sm:[16px]">
-              CREATIVE AGENCY __
-            </p>
-            <p
-              class="text-[#0B0757] text-[48px] font-medium max-w-[436px] leading-[56.88px] pt-[8px] max-sm:text-[36px] max-sm:leading-[42.66px]"
-            >
-              We are here to give the best service
-            </p>
-            <p class="text-[18px] leading-[30px] max-w-[555px] max-sm:[14px]">
-              It's crafted with the latest trend of design & coded with all
-              modern approaches. It's a robust & multi-dimensional usable
-              template.
-            </p>
-            <!-- button -->
-            <div class="flex gap-[29px]">
-              <button
-                class="w-[160px] h-[60px] bg-[#1374F6] rounded-[5px] text-[16px] text-[#FFFFFF] font-medium"
+          <!-- header content -->
+          <div
+            class="flex flex-row max-sm:flex-col justify-between pr-[0px] max-sm:gap-[66px]"
+          >
+            <!-- context -->
+            <div class="flex flex-col gap-[14px] pt-[70px] max-sm:pt-[47px]">
+              <p class="text-[#1374F6] text-[20px] max-sm:[16px]">
+                CREATIVE AGENCY __
+              </p>
+              <h2
+                class="text-[#0B0757] text-[48px] max-w-[436px] leading-[56.88px] pt-[8px] max-sm:text-[36px] max-sm:leading-[42.66px]"
               >
-                Get Started
-              </button>
-              <div class="flex items-center gap-[9px]">
+                We are here to give the best service
+              </h2>
+              <p class="text-[18px] leading-[30px] max-w-[555px] max-sm:[14px]">
+                It's crafted with the latest trend of design & coded with all
+                modern approaches. It's a robust & multi-dimensional usable
+                template.
+              </p>
+              <!-- button -->
+              <div class="flex gap-[29px]">
                 <button
-                  class="h-[24px] w-[24px] rounded-full flex justify-center items-center border-[1px] border-[#1374F6]"
+                  class="w-[160px] h-[60px] bg-[#1374F6] text-center rounded-[5px] text-[16px] text-[#FFFFFF] font-medium"
                 >
-                  <img
-                    src="./assets/header-play-button.png"
-                    class="w-[9px] h-[10px]"
-                  />
+                  Get Started
                 </button>
-                <p>Watch Video</p>
+                <div class="flex items-center gap-[9px]">
+                  <button
+                    class="h-[24px] w-[24px] rounded-full flex justify-center items-center border-[1px] border-[#1374F6]"
+                  >
+                    <img
+                      src="./assets/header-play-button.png"
+                      class="w-[9px] h-[10px]"
+                    />
+                  </button>
+                  <p>Watch Video</p>
+                </div>
               </div>
             </div>
+            <!-- image -->
+            <img
+              src="./assets/header-pic.png"
+              class="w-[609px] h-[632px] max-sm:w-[359px] max-sm:h-[372.56px]"
+            />
           </div>
-          <!-- image -->
-          <img
-            src="./assets/header-pic.png"
-            class="w-[609px] h-[632px] max-sm:w-[359px] max-sm:h-[372.56px]"
-          />
         </div>
       </div>
     </header>
 
-    <section></section>
+    <section class="h-screen relative overflow-x-hidden">
+      <img
+        src="./assets/section-1-decoration.png"
+        class="absolute right-[-90px] top-[250px] w-[188px] h-[52px]"
+      />
+      <img
+        src="./assets/section-1-decoration.png"
+        class="absolute right-[-129px] top-[312px] w-[188px] h-[52px]"
+      />
+      <div class="absolute z-10 h-full pt-[51px] max-sm:pt-[48px]">
+        <h2 class="text-[48px] text-[#0B0757] h-[114px] w-[352px]">
+          Let Check Our Services __
+        </h2>
+        <div class="flex gap-0 max-sm:flex-col mt-[37px]">
+          <button
+            class="w-[285px] h-[296px] px-[32px] max-sm:px-[20px] hover:bg-[#F9FBFF] rounded-[10px]"
+          >
+            <img
+              src="./assets/section-1-logo-1.png"
+              class="w-[79.95px] h-[79.95px] mt-[-20px] max-sm:mt-[-30px]"
+            />
+            <h3 class="text-[20px] leading-[23.7px]">Increase conversion</h3>
+            <p class="text-[16px] leading-[28px]">
+              It's crafted with the latest of design & coded with all trendy &
+              modern approaches.
+            </p>
+          </button>
+          <button
+            class="w-[285px] h-[296px] px-[32px] max-sm:px-[20px] hover:bg-[#F9FBFF] rounded-[10px]"
+          >
+            <img
+              src="./assets/section-1-logo-2.png"
+              class="w-[79.95px] h-[79.95px] mt-[-20px] max-sm:mt-[-30px]"
+            />
+            <h3 class="text-[20px] leading-[23.7px]">Discussion for idea</h3>
+            <p class="text-[16px] leading-[28px]">
+              It's crafted with the latest of design & coded with all trendy &
+              modern approaches.
+            </p>
+          </button>
+          <button
+            class="w-[285px] h-[296px] px-[32px] max-sm:px-[20px] hover:bg-[#F9FBFF] rounded-[10px]"
+          >
+            <img
+              src="./assets/section-1-logo-3.png"
+              class="w-[79.95px] h-[79.95px] mt-[-20px] max-sm:mt-[-30px]"
+            />
+            <h3 class="text-[20px] leading-[23.7px]">Product analytics</h3>
+            <p class="text-[16px] leading-[28px]">
+              It's crafted with the latest of design & coded with all trendy &
+              modern approaches.
+            </p>
+          </button>
+          <button
+            class="w-[285px] h-[296px] px-[32px] max-sm:px-[20px] hover:bg-[#F9FBFF] rounded-[10px]"
+          >
+            <img
+              src="./assets/section-1-logo-4.png"
+              class="w-[79.95px] h-[79.95px] mt-[-20px] max-sm:mt-[-30px]"
+            />
+            <h3 class="text-[20px] leading-[23.7px]">Discussion for idea</h3>
+            <p class="text-[16px] leading-[28px]">
+              It's crafted with the latest of design & coded with all trendy &
+              modern approaches.
+            </p>
+          </button>
+        </div>
+      </div>
+      <div></div>
+    </section>
 
     <section></section>
 
