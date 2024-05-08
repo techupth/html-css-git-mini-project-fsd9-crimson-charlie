@@ -21,17 +21,23 @@
         font-weight: 400;
         text-align: left;
       }
-
-      h1,
-      h2,
-      h3 {
+      section h2,
+      section h3 {
         font-weight: 500;
+      }
+
+      header h2 {
+        font-weight: 500;
+      }
+
+      p {
+        color: #8480ae;
       }
     </style>
   </head>
   <body>
     <!-- Start Coding here -->
-    <header class="h-screen overflow-x-hidden">
+    <header class="h-[956px] max-sm:h-[844px] overflow-x-hidden">
       <div class="relative h-full">
         <img src="./assets/header-bg.png" class="absolute z-0 w-full h-5/6" />
         <div
@@ -64,7 +70,7 @@
                 Create Account
               </button>
             </div>
-            <button>
+            <button class="sm:hidden">
               <img
                 src="./assets/header-menu-button.png"
                 class="hidden max-sm:block w-[24px] h-[24px]"
@@ -121,20 +127,28 @@
       </div>
     </header>
 
-    <section class="h-screen relative overflow-x-hidden">
+    <section class="h-[626px] max-sm:h-[1341px] relative overflow-x-hidden">
       <img
         src="./assets/section-1-decoration.png"
-        class="absolute right-[-90px] top-[250px] w-[188px] h-[52px]"
+        class="absolute right-[-90px] top-[250px] w-[188px] h-[52px] max-sm:hidden"
       />
       <img
         src="./assets/section-1-decoration.png"
-        class="absolute right-[-129px] top-[312px] w-[188px] h-[52px]"
+        class="absolute right-[-129px] top-[312px] w-[188px] h-[52px] max-sm:hidden"
       />
-      <div class="absolute z-10 h-full pt-[51px] max-sm:pt-[48px]">
-        <h2 class="text-[48px] text-[#0B0757] h-[114px] w-[352px]">
-          Let Check Our Services __
+      <div
+        class="absolute z-10 h-full pt-[51px] max-sm:pt-[48px] pl-[166px] max-sm:pl-[16px]"
+      >
+        <h2 class="text-[48px] text-[#0B0757] min-h-[114px] max-w-[352px]">
+          Let Check Our Services
+          <span
+            class="inline-block text-[#1374F6] underline decoration-8 underline-offset-[-4px]"
+            >__
+          </span>
         </h2>
-        <div class="flex gap-0 max-sm:flex-col mt-[37px]">
+        <div
+          class="flex gap-0 max-sm:flex-col mt-[37px] sm:relative sm:left-[-30px]"
+        >
           <button
             class="w-[285px] h-[296px] px-[32px] max-sm:px-[20px] hover:bg-[#F9FBFF] rounded-[10px]"
           >
@@ -192,7 +206,68 @@
       <div></div>
     </section>
 
-    <section></section>
+    <section
+      class="h-[971px] max-sm:[1031px] relative overflow-x-hidden pt-[90px]"
+    >
+      <img
+        src="./assets/section-2-bg.png"
+        class="absolute left-[166px] top-[88px] h-[855.5px] w-screen max-sm:top-0 max-sm:h-[913.5px] max-sm:left-0"
+      />
+      <div
+        class="px-[166px] max-sm:pl-[16px] max-sm:pr-[34px] flex justify-between max-sm:flex-col absolute z-10 w-full"
+      >
+        <div class="relative max-sm:hidden">
+          <img
+            src="./assets/section-2-image-1.png"
+            class="h-[569px] w-[444px]"
+          />
+          <img
+            src="./assets/section-2-image-2.png"
+            class="h-[235.41px] w-[217px] absolute left-[-68px] top-[309.81px]"
+          />
+        </div>
+        <div class="pt-[203px] max-sm:pt-0 max-w-[570px]">
+          <h2
+            class="text-[48px] leading-[56.88px] max-w-[401px] min-h-[114px] text-[#0B0757] font-medium max-sm:text-[36px] max-sm:leading-[42.66px]"
+          >
+            We Take The Work Of Your Hand
+            <span
+              class="inline-block text-[#1374F6] underline decoration-8 underline-offset-[-4px]"
+              >__
+            </span>
+          </h2>
+          <div class="mt-[30px]">
+            <p class="text-[18px] leading-[30px]">
+              It's crafted with the latest trend of design & coded with all
+              modern approaches. It's a robust & multi-dimensional usable.
+              Nostrum placeat hic, praesent atque ornare minim.
+            </p>
+            <p class="text-[18px] leading-[30px] my-[30px]">
+              nihil suscipit aliquet excepteur bibendum cumque facilis senectus
+              habitant aliquid cupidatat! Fugit? Nisl dignissimos ratione
+            </p>
+
+            <button
+              class="w-[160px] h-[60px] rounded-[5px] text-[16px] font-medium text-center text-[#FFFFFF] bg-[#1374F6]"
+            >
+              Discover More
+            </button>
+          </div>
+        </div>
+        <div class="relative sm:hidden w-full flex justify-center mt-[20px]">
+          <div class="relative">
+            <img
+              src="./assets/section-2-image-1.png"
+              class="h-[313px] w-[250.62px]"
+            />
+            <img
+              src="./assets/section-2-image-2.png"
+              class="h-[171.15px] w-[157.76px] absolute left-[-68px] top-[100.81px]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section></section>
 
