@@ -4,9 +4,723 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mini Project Agencio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Rubik;
+        box-sizing: border-box;
+        font-weight: 400;
+        text-align: left;
+        color: #8480ae;
+      }
+      section h2,
+      section h3 {
+        color: #0b0757;
+        font-weight: 500;
+      }
+
+      p {
+        color: #8480ae;
+      }
+
+      footer h1,
+      header h1,
+      footer h2 {
+        color: #0b0757;
+        font-weight: 500;
+      }
+    </style>
   </head>
   <body>
     <!-- Start Coding here -->
+
+    <!-- header -->
+    <header class="h-[956px] max-sm:h-[844px] overflow-x-hidden">
+      <div class="relative h-full">
+        <img src="./assets/header-bg.png" class="absolute z-0 w-full h-5/6" />
+        <div
+          class="absolute z-10 flex flex-col w-full pt-[32px] gap-[83px] pl-[166px] pr-[63px] max-sm:gap-[0px] max-sm:pt-0 max-sm:pl-[16px] max-sm:pr-0"
+        >
+          <!-- Navigator bar -->
+          <div
+            class="flex flex-row justify-between min-[1440px]:justify-evenly h-[69px] items-center w-full pr-[100px] max-sm:pr-[16px]"
+          >
+            <div
+              class="flex flex-row justify-between items-center gap-[18px] max-sm:gap-[8px]"
+            >
+              <img
+                src="./assets/header-logo.png"
+                class="h-[42.5px] w-[51px] max-sm:w-[38.25px] max-sm:h-[31.875px]"
+              />
+              <h1 class="text-[36px] max-sm:text-[27px] font-medium">
+                Agencio
+              </h1>
+            </div>
+            <div class="flex flex-row gap-[48px] font-[16px] max-sm:hidden">
+              <button class="text-[#1F1E61]">Home</button>
+              <button class="text-[#1F1E61]">Category</button>
+              <button class="text-[#1F1E61]">Service</button>
+              <button class="text-[#1F1E61]">Blog</button>
+              <button class="text-[#1F1E61]">Contact</button>
+              <button
+                class="w-[160px] h-[60px] bg-[#FDD76E] text-[#1F1E61] text-center px-[22px] py-[20.5px] rounded-[5px]"
+              >
+                Create Account
+              </button>
+            </div>
+            <button class="sm:hidden">
+              <img
+                src="./assets/header-menu-button.png"
+                class="hidden max-sm:block w-[24px] h-[24px]"
+              />
+            </button>
+          </div>
+
+          <!-- header content -->
+          <div
+            class="flex flex-row max-sm:flex-col justify-center pr-[0px] max-sm:gap-[66px]"
+          >
+            <!-- context -->
+            <div class="flex flex-col gap-[14px] pt-[70px] max-sm:pt-[47px]">
+              <p class="text-[#1374F6] text-[20px] max-sm:[16px]">
+                CREATIVE AGENCY __
+              </p>
+              <h2
+                class="text-[#0B0757] text-[48px] max-w-[436px] leading-[56.88px] pt-[8px] max-sm:text-[36px] max-sm:leading-[42.66px]"
+              >
+                We are here to give the best service
+              </h2>
+              <p class="text-[18px] leading-[30px] max-w-[555px] max-sm:[14px]">
+                It's crafted with the latest trend of design & coded with all
+                modern approaches. It's a robust & multi-dimensional usable
+                template.
+              </p>
+              <!-- button -->
+              <div class="flex gap-[29px]">
+                <button
+                  class="w-[160px] h-[60px] bg-[#1374F6] text-center rounded-[5px] text-[16px] text-[#FFFFFF] font-medium"
+                >
+                  Get Started
+                </button>
+                <div class="flex items-center gap-[9px]">
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <button
+                      class="h-[24px] w-[24px] rounded-full flex justify-center items-center border-[1px] border-[#1374F6]"
+                    >
+                      <img
+                        src="./assets/header-play-button.png"
+                        class="w-[9px] h-[10px]"
+                      />
+                    </button>
+                  </a>
+                  <p>Watch Video</p>
+                </div>
+              </div>
+            </div>
+            <!-- image -->
+            <img
+              src="./assets/header-pic.png"
+              class="w-[609px] h-[632px] max-sm:w-[359px] max-sm:h-[372.56px]"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- section 1 -->
+    <section
+      class="h-[626px] max-sm:h-[1341px] relative overflow-x-hidden flex justify-center items-center"
+    >
+      <img
+        src="./assets/section-1-decoration.png"
+        class="absolute right-[-90px] top-[250px] w-[188px] h-[52px] max-sm:hidden z-0"
+      />
+      <img
+        src="./assets/section-1-decoration.png"
+        class="absolute right-[-129px] top-[312px] w-[188px] h-[52px] max-sm:hidden z-0"
+      />
+      <div
+        class="relative z-10 h-full pt-[51px] max-sm:pt-[48px] pl-[166px] max-sm:pl-[16px]"
+      >
+        <h2 class="text-[48px] text-[#0B0757] min-h-[114px] max-w-[352px]">
+          Let Check Our Services
+          <span
+            class="inline-block text-[#1374F6] underline decoration-8 underline-offset-[-4px]"
+            >__
+          </span>
+        </h2>
+        <div
+          class="flex gap-0 max-sm:flex-col mt-[37px] sm:relative sm:left-[-30px]"
+        >
+          <button
+            class="w-[285px] h-[296px] px-[32px] max-sm:px-[20px] hover:bg-[#F9FBFF] rounded-[10px]"
+          >
+            <img
+              src="./assets/section-1-logo-1.png"
+              class="w-[79.95px] h-[79.95px] mt-[-20px] max-sm:mt-[-30px]"
+            />
+            <h3 class="text-[20px] leading-[23.7px]">Increase conversion</h3>
+            <p class="text-[16px] leading-[28px]">
+              It's crafted with the latest of design & coded with all trendy &
+              modern approaches.
+            </p>
+          </button>
+          <button
+            class="w-[285px] h-[296px] px-[32px] max-sm:px-[20px] hover:bg-[#F9FBFF] rounded-[10px]"
+          >
+            <img
+              src="./assets/section-1-logo-2.png"
+              class="w-[79.95px] h-[79.95px] mt-[-20px] max-sm:mt-[-30px]"
+            />
+            <h3 class="text-[20px] leading-[23.7px]">Discussion for idea</h3>
+            <p class="text-[16px] leading-[28px]">
+              It's crafted with the latest of design & coded with all trendy &
+              modern approaches.
+            </p>
+          </button>
+          <button
+            class="w-[285px] h-[296px] px-[32px] max-sm:px-[20px] hover:bg-[#F9FBFF] rounded-[10px]"
+          >
+            <img
+              src="./assets/section-1-logo-3.png"
+              class="w-[79.95px] h-[79.95px] mt-[-20px] max-sm:mt-[-30px]"
+            />
+            <h3 class="text-[20px] leading-[23.7px]">Product analytics</h3>
+            <p class="text-[16px] leading-[28px]">
+              It's crafted with the latest of design & coded with all trendy &
+              modern approaches.
+            </p>
+          </button>
+          <button
+            class="w-[285px] h-[296px] px-[32px] max-sm:px-[20px] hover:bg-[#F9FBFF] rounded-[10px]"
+          >
+            <img
+              src="./assets/section-1-logo-4.png"
+              class="w-[79.95px] h-[79.95px] mt-[-20px] max-sm:mt-[-30px]"
+            />
+            <h3 class="text-[20px] leading-[23.7px]">Discussion for idea</h3>
+            <p class="text-[16px] leading-[28px]">
+              It's crafted with the latest of design & coded with all trendy &
+              modern approaches.
+            </p>
+          </button>
+        </div>
+      </div>
+      <div></div>
+    </section>
+
+    <!-- section 2: prodcut list -->
+    <section
+      class="h-[971px] max-sm:[1031px] relative overflow-x-hidden pt-[90px]"
+    >
+      <div>
+        <img
+          src="./assets/section-2-bg.png"
+          class="absolute left-[166px] min-[1440px]:left-[50vw] min-[1440px]:ml-[-554px] top-[88px] h-[855.5px] w-screen max-sm:top-0 max-sm:h-[913.5px] max-sm:left-0"
+        />
+      </div>
+      <div
+        class="ml-[166px] max-sm:ml-[16px] min-[1440px]:pl-[50vw] min-[1440px]:ml-[-554px] min-[1440px]:w-[200vw] sm:gap-[150px] max-sm:px-[16px] max-sm:pr-[34px] flex justify-start max-sm:flex-col absolute z-10 w-full"
+      >
+        <div class="relative max-sm:hidden">
+          <img
+            src="./assets/section-2-image-1.png"
+            class="h-[569px] w-[444px]"
+          />
+          <img
+            src="./assets/section-2-image-2.png"
+            class="h-[235.41px] w-[217px] absolute left-[-68px] top-[309.81px]"
+          />
+        </div>
+        <div class="pt-[203px] max-sm:pt-0 max-w-[570px]">
+          <h2
+            class="text-[48px] leading-[56.88px] max-w-[401px] min-h-[114px] text-[#0B0757] font-medium max-sm:text-[36px] max-sm:leading-[42.66px]"
+          >
+            We Take The Work Of Your Hand
+            <span
+              class="inline-block text-[#1374F6] underline decoration-8 underline-offset-[-4px]"
+              >__
+            </span>
+          </h2>
+          <div class="mt-[30px]">
+            <p class="text-[18px] leading-[30px]">
+              It's crafted with the latest trend of design & coded with all
+              modern approaches. It's a robust & multi-dimensional usable.
+              Nostrum placeat hic, praesent atque ornare minim.
+            </p>
+            <p class="text-[18px] leading-[30px] my-[30px]">
+              nihil suscipit aliquet excepteur bibendum cumque facilis senectus
+              habitant aliquid cupidatat! Fugit? Nisl dignissimos ratione
+            </p>
+
+            <button
+              class="w-[160px] h-[60px] rounded-[5px] text-[16px] font-medium text-center text-[#FFFFFF] bg-[#1374F6]"
+            >
+              Discover More
+            </button>
+          </div>
+        </div>
+        <div class="relative sm:hidden w-full flex justify-center mt-[20px]">
+          <div class="relative">
+            <img
+              src="./assets/section-2-image-1.png"
+              class="h-[313px] w-[250.62px]"
+            />
+            <img
+              src="./assets/section-2-image-2.png"
+              class="h-[171.15px] w-[157.76px] absolute left-[-68px] top-[100.81px]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 3 -->
+    <section class="h-[1032px] max-sm:h-[665px] overflow-x-hidden">
+      <div
+        class="w-full px-[166px] max-sm:px-[16px] h-full pt-[135px] max-sm:pt-[50px] flex flex-col sm:items-center"
+      >
+        <div
+          class="w-full ml-[-166px] flex flex-col items-center max-sm:w-[375px] max-sm:ml-[-16px] min-[1440px]:ml-0"
+        >
+          <p class="text-[24px] text-center">Price Plan</p>
+          <h2 class="text-[48px] leading-[56.88px] text-center">
+            No Extra Charges!
+          </h2>
+          <h2 class="text-[48px] leading-[56.88px] text-center">
+            Choose Your Plan.
+          </h2>
+        </div>
+        <div class="flex flex-col w-[1110px] h-[584px] gap-0 mt-[96px]">
+          <div class="flex">
+            <div
+              class="w-[277.5px] h-[146px] border border-[#0B075714] opacity-[0.8]"
+            ></div>
+            <div
+              class="w-[277.5px] h-[146px] border border-[#0B075714] opacity-[0.8] flex flex-col justify-center"
+            >
+              <h3 class="text-[36px] text-[#FDC46E] text-center">$2000</h3>
+              <p class="text-[20px] text-center">Regular</p>
+            </div>
+            <div
+              class="w-[277.5px] h-[146px] border border-[#0B075714] opacity-[0.8] flex flex-col justify-center"
+            >
+              <h3 class="text-[36px] text-[#00B894] text-center">$3000</h3>
+              <p class="text-[20px] text-center">Premium</p>
+            </div>
+            <div
+              class="w-[277.5px] h-[146px] border border-[#0B075714] opacity-[0.8] flex flex-col justify-center"
+            >
+              <h3 class="text-[36px] text-[#1374F6] text-center">$5000</h3>
+              <p class="text-[20px] text-center">Corporate</p>
+            </div>
+          </div>
+          <div class="flex">
+            <div
+              class="w-[277.5px] h-[73px] border border-[#0B075714] opacity-[0.8] flex items-center px-[24px]"
+            >
+              <p class="text-[20px]">Full Access</p>
+            </div>
+            <div
+              class="w-[277.5px] h-[73px] border border-[#0B075714] opacity-[0.8] flex justify-center items-center"
+            >
+              <img
+                src="./assets/section-3-no.png"
+                class="w-[12.73px] h-[12.73px]"
+              />
+            </div>
+            <div
+              class="w-[277.5px] h-[73px] border border-[#0B075714] opacity-[0.8] flex justify-center items-center"
+            >
+              <img
+                src="./assets/section-3-no.png"
+                class="w-[12.73px] h-[12.73px]"
+              />
+            </div>
+            <div
+              class="w-[277.5px] h-[73px] border border-[#0B075714] opacity-[0.8] flex justify-center items-center"
+            >
+              <img
+                src="./assets/section-3-yes.png"
+                class="w-[16.92px] h-[12.02px]"
+              />
+            </div>
+          </div>
+          <div class="flex">
+            <div
+              class="w-[277.5px] h-[73px] border border-[#0B075714] opacity-[0.8] flex items-center px-[24px]"
+            >
+              <p class="text-[20px]">Multiple User</p>
+            </div>
+            <div
+              class="w-[277.5px] h-[73px] border border-[#0B075714] opacity-[0.8] flex justify-center items-center"
+            >
+              <img
+                src="./assets/section-3-no.png"
+                class="w-[12.73px] h-[12.73px]"
+              />
+            </div>
+            <div
+              class="w-[277.5px] h-[73px] border border-[#0B075714] opacity-[0.8] flex justify-center items-center"
+            >
+              <img
+                src="./assets/section-3-no.png"
+                class="w-[12.73px] h-[12.73px]"
+              />
+            </div>
+            <div
+              class="w-[277.5px] h-[73px] border border-[#0B075714] opacity-[0.8] flex justify-center items-center"
+            >
+              <img
+                src="./assets/section-3-yes.png"
+                class="w-[16.92px] h-[12.02px]"
+              />
+            </div>
+          </div>
+          <div class="flex">
+            <div
+              class="w-[277.5px] h-[73px] border border-[#0B075714] opacity-[0.8] flex items-center px-[24px]"
+            >
+              <p class="text-[20px]">Refund</p>
+            </div>
+            <div
+              class="w-[277.5px] h-[73px] border border-[#0B075714] opacity-[0.8] flex justify-center items-center"
+            >
+              <img
+                src="./assets/section-3-no.png"
+                class="w-[12.73px] h-[12.73px]"
+              />
+            </div>
+            <div
+              class="w-[277.5px] h-[73px] border border-[#0B075714] opacity-[0.8] flex justify-center items-center"
+            >
+              <img
+                src="./assets/section-3-yes.png"
+                class="w-[16.92px] h-[12.02px]"
+              />
+            </div>
+            <div
+              class="w-[277.5px] h-[73px] border border-[#0B075714] opacity-[0.8] flex justify-center items-center"
+            >
+              <img
+                src="./assets/section-3-yes.png"
+                class="w-[16.92px] h-[12.02px]"
+              />
+            </div>
+          </div>
+          <div class="flex">
+            <div
+              class="w-[277.5px] h-[73px] border border-[#0B075714] opacity-[0.8] flex items-center px-[24px]"
+            >
+              <p class="text-[20px]">24/7 Support</p>
+            </div>
+            <div
+              class="w-[277.5px] h-[73px] border border-[#0B075714] opacity-[0.8] flex justify-center items-center"
+            >
+              <img
+                src="./assets/section-3-yes.png"
+                class="w-[16.92px] h-[12.02px]"
+              />
+            </div>
+            <div
+              class="w-[277.5px] h-[73px] border border-[#0B075714] opacity-[0.8] flex justify-center items-center"
+            >
+              <img
+                src="./assets/section-3-yes.png"
+                class="w-[16.92px] h-[12.02px]"
+              />
+            </div>
+            <div
+              class="w-[277.5px] h-[73px] border border-[#0B075714] opacity-[0.8] flex justify-center items-center"
+            >
+              <img
+                src="./assets/section-3-yes.png"
+                class="w-[16.92px] h-[12.02px]"
+              />
+            </div>
+          </div>
+          <div class="flex">
+            <div
+              class="w-[277.5px] h-[146px] border border-[#0B075714] opacity-[0]"
+            ></div>
+            <div
+              class="w-[277.5px] h-[146px] border border-[#0B075714] opacity-[0.8] flex flex-col justify-center items-center gap-[20px]"
+            >
+              <button
+                class="w-[120px] h-[48px] rounded-[5px] bg-[#FDC46E] text-center font-medium text-[14px] text-[#FFFFFF]"
+              >
+                Choose Plan
+              </button>
+              <p class="text-[14px]">Get your 30 days free trial</p>
+            </div>
+            <div
+              class="w-[277.5px] h-[146px] border border-[#0B075714] opacity-[0.8] flex flex-col justify-center items-center gap-[20px]"
+            >
+              <button
+                class="w-[120px] h-[48px] rounded-[5px] bg-[#00B894] text-center font-medium text-[14px] text-[#FFFFFF]"
+              >
+                Choose Plan
+              </button>
+              <p class="text-[14px]">Get your 30 days free trial</p>
+            </div>
+            <div
+              class="w-[277.5px] h-[146px] border border-[#0B075714] opacity-[0.8] flex flex-col justify-center items-center gap-[20px]"
+            >
+              <button
+                class="w-[120px] h-[48px] rounded-[5px] bg-[#1374F6] text-center font-medium text-[14px] text-[#FFFFFF]"
+              >
+                Choose Plan
+              </button>
+              <p class="text-[14px]">Get your 30 days free trial</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 4 -->
+    <section
+      class="h-[827px] max-sm:h-[847px] overflow-x-hidden pt-[146px] max-sm:pt-[74px]"
+    >
+      <div
+        class="w-full px-[165px] max-sm:px-[16px] flex justify-center sm:gap-[150px] max-sm:flex-col max-sm:justify-start"
+      >
+        <div
+          class="relative w-[349px] h-[482px] max-sm:ml-[20px] max-sm:w-[308px] max-sm:h-[424px]"
+        >
+          <img
+            src="./assets/section-4-image.png"
+            class="w-[349px] h-[482px] absolute max-sm:w-[308px] max-sm:h-[424px]"
+          />
+          <div
+            class="bg-[#64D5FD] flex justify-center items-center w-[76px] h-[76px] rounded-[10px] absolute z-20 left-[-38px] top-[284px] max-sm:top-[234px]"
+          >
+            <img src="./assets/section-4-like.png" />
+          </div>
+        </div>
+        <div class="pt-[98px] max-sm:pt-[20px]">
+          <img
+            src="./assets/section-4-quote.png"
+            class="w-[59px] h-[59px] max-sm:w-[44px] max-sm:h-[44px]"
+          />
+          <p
+            class="max-w-[602px] text-[24px] italic leading-[40px] max-sm:max-w-[343px] mt-[22px] max-sm:mt-[18px] max-sm:text-[16px] max-sm:leading-[24px]"
+          >
+            It’s awesome service. Land from day very fill that midst stars one
+            dominion. Itself was let that divided itself god don't subdue
+            wherein let behold over he whose of sea moved called.
+          </p>
+          <div class="max-sm:flex max-sm:flex-col max-sm:items-center">
+            <p
+              class="text-[24px] text-[#FDC46E] font-bold mt-[35px] max-sm:mt-[19px]"
+            >
+              Jack Smith
+            </p>
+            <p class="text-[16px] mt-[10px]">CEO of DIANO</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 5 -->
+    <section class="h-[349px] max-sm:h-[325px] overflow-x-hidden">
+      <div
+        class="h-full w-full px-[165px] max-sm:px-[16px] min-[1440px]:flex min-[1440px]:justify-center"
+      >
+        <div
+          class="w-[1110px] bg-[#F4F7FC] rounded-[15px] h-full max-sm:w-screen max-sm:ml-[-16px] pt-[56px] flex flex-col justify-start items-center"
+        >
+          <h2 class="text-center text-[36px] max-w-[438px] leading-[42.66px]">
+            Sign up to our newsletter
+          </h2>
+          <p
+            class="text-center text-[20px] leading-[30px] max-w-[450px] mb-[40px] mt-[10px] max-sm:text-[16px]"
+          >
+            Recive latest news, updates and many other news every week.
+          </p>
+          <div
+            class="bg-[#FFFFFF] w-[480px] h-[67px] rounded-[50px] p-[10px] flex justify-between max-sm:w-[319px]"
+          >
+            <input
+              placeholder="Enter your email address"
+              class="pl-[30px] w-[300px] sm:w-[400px] max-sm:pl-[20px]"
+            />
+            <button
+              class="rounded-full w-[46px] h-[46px] relative flex justify-center items-center"
+            >
+              <div
+                class="rounded-full w-[46px] h-[46px] bg-[#1374F6] absolute"
+              ></div>
+              <img
+                src="./assets/section-5-send-button.png"
+                class="h-[27.6px] w-[27.6px] relative z-10"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="h-[469px] max-sm:h-[597px] overflow-x-hidden">
+      <div
+        class="h-full w-full px-[165px] max-sm:px-[16px] pt-[112px] max-sm:pt-[46px]"
+      >
+        <div
+          class="flex gap-[100px] min-[1440px]:justify-center max-sm:flex-col max-sm:gap-[0px]"
+        >
+          <div class="max-sm:mb-[54px]">
+            <div class="flex gap-[18px]">
+              <img src="./assets/header-logo.png" class="w-[39px] h-[31.5px]" />
+              <h1 class="text-[24px]">Agencio</h1>
+            </div>
+            <p
+              class="text-[16px] leading-[30px] max-w-[350px] mt-[20px] max-sm:mt-[16px] mb-[15px] max-sm:mb-[40px]"
+            >
+              Winged moving moveth created for shall and a divide the their days
+              male midst shall hath doesn't won't for. Midst life.Over a great
+              night.
+            </p>
+            <div class="flex gap-[24px]">
+              <button
+                class="w-[32px] h-[32px] rounded-full flex justify-center items-center relative"
+              >
+                <div
+                  class="bg-[#1374F626] opacity-50 w-[32px] h-[32px] rounded-full absolute z-in"
+                ></div>
+
+                <img
+                  src="./assets/footer-logo-1.png"
+                  class="w-[16px] h-[16px]"
+                />
+              </button>
+              <button
+                class="w-[32px] h-[32px] rounded-full flex justify-center items-center relative"
+              >
+                <div
+                  class="bg-[#1374F626] opacity-50 w-[32px] h-[32px] rounded-full absolute z-in"
+                ></div>
+
+                <img
+                  src="./assets/footer-logo-2.png"
+                  class="w-[16px] h-[16px]"
+                />
+              </button>
+              <button
+                class="w-[32px] h-[32px] rounded-full flex justify-center items-center relative"
+              >
+                <div
+                  class="bg-[#1374F626] opacity-50 w-[32px] h-[32px] rounded-full absolute z-in"
+                ></div>
+
+                <img
+                  src="./assets/footer-logo-3.png"
+                  class="w-[16px] h-[16px]"
+                />
+              </button>
+              <button
+                class="w-[32px] h-[32px] rounded-full flex justify-center items-center relative"
+              >
+                <div
+                  class="bg-[#1374F626] opacity-50 w-[32px] h-[32px] rounded-full absolute z-in"
+                ></div>
+
+                <img
+                  src="./assets/footer-logo-4.png"
+                  class="w-[16px] h-[16px]"
+                />
+              </button>
+            </div>
+          </div>
+          <div>
+            <div
+              class="mb-[32px] max-sm:my-[20px] max-sm:mt-[10px] flex justify-between"
+            >
+              <h2 class="text-[20px]">Features</h2>
+              <button class="sm:hidden">
+                <img
+                  src="./assets/footer-expand-button.png"
+                  class="w-[24px] h-[24px]"
+                />
+              </button>
+            </div>
+
+            <div class="flex flex-col max-sm:hidden">
+              <button class="text-[16px] h-[33px]">Analytic</button>
+              <button class="text-[16px] h-[33px]">Activity</button>
+              <button class="text-[16px] h-[33px]">Influencer</button>
+              <button class="text-[16px] h-[33px]">Publishing</button>
+            </div>
+
+            <hr class="sm:hidden ml-[-16px] w-screen" />
+          </div>
+
+          <div>
+            <div
+              class="mb-[32px] max-sm:my-[20px] max-sm:mt-[10px] flex justify-between"
+            >
+              <h2 class="text-[20px]">About</h2>
+              <button class="sm:hidden">
+                <img
+                  src="./assets/footer-expand-button.png"
+                  class="w-[24px] h-[24px]"
+                />
+              </button>
+            </div>
+
+            <div class="flex flex-col max-sm:hidden">
+              <button class="text-[16px] h-[33px]">Blog</button>
+              <button class="text-[16px] h-[33px]">Pricing</button>
+              <button class="text-[16px] h-[33px]">Company</button>
+              <button class="text-[16px] h-[33px]">Careers</button>
+            </div>
+
+            <hr class="sm:hidden ml-[-16px] w-screen" />
+          </div>
+
+          <div>
+            <div
+              class="mb-[32px] max-sm:my-[20px] max-sm:mt-[10px] flex justify-between"
+            >
+              <h2 class="text-[20px]">Resources</h2>
+              <button class="sm:hidden">
+                <img
+                  src="./assets/footer-expand-button.png"
+                  class="w-[24px] h-[24px]"
+                />
+              </button>
+            </div>
+
+            <div class="flex flex-col max-sm:hidden">
+              <button class="text-[16px] h-[33px]">Application Security</button>
+              <button class="text-[16px] h-[33px]">Software Policy</button>
+              <button class="text-[16px] h-[33px]">Supply Chain</button>
+              <button class="text-[16px] h-[33px]">Manage Reputation</button>
+            </div>
+
+            <hr class="sm:hidden ml-[-16px] w-screen" />
+          </div>
+        </div>
+        <hr
+          class="mt-[60px] border border-[#8480AE4D] opacity-30 mb-[32px] max-sm:hidden"
+        />
+        <p
+          class="text-center text-[16px] max-sm:text-[#8480AE] max-sm:text-[18px] max-sm:mt-[30px]"
+        >
+          Copyright ©2020 Agencio.<span class="max-sm:hidden">
+            All Rights Reserved</span
+          >
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
